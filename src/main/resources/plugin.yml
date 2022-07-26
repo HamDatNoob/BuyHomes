@@ -1,0 +1,9 @@
+name: BuyHomes
+description: A plugin to purchase homes and use them accordingly with integration with any Vault API economy plugin.
+version: '${project.version}'
+main: dev.hamsjunk.buyhomes.Main
+api-version: 1.19
+commands:
+  homes:
+    description: Shows the home menu for the player
+    usage: /<command>
