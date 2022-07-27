@@ -4,12 +4,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class Gui extends Event {
+public class SetHome extends Event {
     private static final HandlerList handlers = new HandlerList();
 
     Player p;
 
-    public Gui(Player p) {
+    public SetHome(Player p) {
         this.p = p;
     }
 
