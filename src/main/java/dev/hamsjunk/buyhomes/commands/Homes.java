@@ -1,7 +1,7 @@
 package dev.hamsjunk.buyhomes.commands;
 
 import dev.hamsjunk.buyhomes.Main;
-import dev.hamsjunk.buyhomes.events.Gui;
+import dev.hamsjunk.buyhomes.events.HomePageEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -18,7 +18,7 @@ public class Homes implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
-            Bukkit.getServer().getPluginManager().callEvent(new Gui((Player) sender));
+            Bukkit.getServer().getPluginManager().callEvent(new HomePageEvent((Player) sender));
 
             return true;
         } else {

@@ -4,12 +4,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class HomePage extends Event {
+public class HomePageEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
 
     Player p;
 
-    public HomePage(Player p) {
+    public HomePageEvent(Player p) {
         this.p = p;
     }
 
